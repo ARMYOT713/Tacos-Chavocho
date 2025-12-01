@@ -1275,3 +1275,136 @@ html {
     .compare-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;background:#fff;padding:8px 12px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.12);display:flex;gap:10px;align-items:center}
 }
 
+/*===========
+   PROMOCIONES
+============*/
+
+#promociones {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#promociones h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+#promociones > p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de tarjetas */
+.promo-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas individuales */
+.promo-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 14px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Título de cada promoción */
+.promo-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #d32f2f; /* Color tipo rojo taquería */
+}
+
+/* Descripción de la promo */
+.promo-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Hover efecto */
+.promo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #promociones h2 {
+        font-size: 1.8rem;
+    }
+
+    .promo-card {
+        width: 90%;
+    }
+}
+/*===========
+   NOSOTROS
+============*/
+
+.section-nosotros {
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.section-nosotros h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Contenedor lado a lado */
+.nosotros-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Texto */
+.nosotros-texto {
+    max-width: 550px;
+    text-align: justify;
+}
+
+.nosotros-texto p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+/* Imagen */
+.nosotros-imagen img {
+    width: 340px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nosotros-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros-texto {
+        text-align: center;
+    }
+
+    .nosotros-imagen img {
+        width: 90%;
+        max-width: 380px;
+    }
+}
